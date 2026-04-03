@@ -1,4 +1,91 @@
+<style>
+  /* Profile Image Styling */
+  .profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #2f80ed; /* Blue accent border */
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Image Hover Effect */
+  .profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(47, 128, 237, 0.4);
+  }
+
+  /* Interactive Button Styling */
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Primary Button (Blue) */
+  .btn-primary { 
+    background-color: #2f80ed; 
+    color: #ffffff !important; 
+    border: 2px solid #2f80ed;
+  }
+  .btn-primary:hover { 
+    background-color: #1b65c9; 
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(47, 128, 237, 0.4);
+  }
+
+  /* Secondary Button (Dark) */
+  .btn-secondary { 
+    background-color: transparent; 
+    color: #e0e0e0 !important; 
+    border: 2px solid #444; 
+  }
+  .btn-secondary:hover { 
+    background-color: #333; 
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+</style>
+/* Card Styling for Experience */
+  .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border-color: #444;
+  }
+
 <div align="center">
+  <img src="profile.jpg" alt="Vinay B" class="profile-img">
+  
+  <h1>Vinay B</h1>
+  <h3>Group Product Manager</h3>
+  <p>I build <strong>AI-enabled, data-driven B2B SaaS platforms</strong>.</p>
+  
+  <div style="margin-top: 25px; margin-bottom: 25px;">
+    <a href="https://bold.pro/my/vinayb" class="btn btn-primary">↓ View My Work</a>
+    <a href="mailto:braovinay@gmail.com" class="btn btn-secondary">✉ Get In Touch</a>
+  </div>
+  
+  <p style="font-size: 18px;">
+    <a href="https://www.linkedin.com/in/vinaybrao/">LinkedIn</a> •
+    <a href="https://medium.com/@braovinay">Medium</a>
+  </p>
+</div>
+
+---
   <h1>Vinay B</h1>
   <h3>Group Product Manager</h3>
   <p>I build <strong>AI-enabled, data-driven B2B SaaS platforms</strong>.</p>
@@ -33,11 +120,15 @@ Proven track record of driving platform modernization (microservices), API-first
 
 ## 🏢 Work Experience
 
-### Senior Product Manager @ Melento
-*December 2024 – Present | Bengaluru*
-* Own product strategy and roadmap for a B2B SaaS platform, driving AI-enabled automation and scalable platform architecture for 800+ enterprise customers.
-* Lead cross-functional teams (engineering, design, business) to deliver data-driven features, improving performance, reliability, and key product KPIs.
-* Boosted operational efficiency by **40%** by architecting and integrating AI automated workflows saving 240 hrs per week.
+<div class="card">
+  <h3>Senior Product Manager @ Melento</h3>
+  <p><em>December 2024 – Present | Bengaluru</em></p>
+  <ul>
+    <li>Own product strategy and roadmap for a B2B SaaS platform, driving AI-enabled automation and scalable platform architecture for 800+ enterprise customers.</li>
+    <li>Lead cross-functional teams (engineering, design, business) to deliver data-driven features, improving performance, reliability, and key product KPIs.</li>
+    <li>Boosted operational efficiency by <strong>40%</strong> by architecting and integrating AI automated workflows saving 240 hrs per week.</li>
+  </ul>
+</div>
 
 ### Product Manager @ Melento
 *November 2023 – November 2024 | Bengaluru*
